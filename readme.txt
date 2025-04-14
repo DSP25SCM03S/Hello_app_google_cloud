@@ -17,7 +17,7 @@ Step 4: To deploy application to gcloud platform:
       c. Type `docker build .` on cmd to build a docker image
       d. Type `docker images` on cmd to see the first docker image. After hitting enter. You will see Newest created image which will be always on the top of the list
       e. Now we can see newest created image has tag as <none> and its image id.
-         type ‘docker tag <your newest image id> gcr.io/<your project id>/<project name> and hit enter and then type docker images. 
+         type ‘<your newest image id> gcr.io/<your project id>/<project name> and hit enter and then type docker images. 
          you will see your image id with tag name
       f. Type `gcloud init` on cmd and it will prompt Create or select a configuration choose existing configurations and hit enter and
          it will prompt Choose a current Google Cloud project, choose your current gcloud project number and hit ent
@@ -39,7 +39,7 @@ Step 4: To deploy application to gcloud platform:
 
   Step 6: To push your code to GitHub code:
           a. git init
-          b. git add .
+          b. git add .docker tag 
           c.git commit -m “flask microservice”
           d.git remote add origin <github repo url>
           e.git push
